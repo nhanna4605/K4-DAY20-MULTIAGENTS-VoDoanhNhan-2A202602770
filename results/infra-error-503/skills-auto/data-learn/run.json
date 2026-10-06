@@ -1,0 +1,64 @@
+{
+  "task": "data-learn",
+  "condition": "skills-auto",
+  "role": "learn",
+  "error": "OpenAIAPIError: Error code: 503 - {'error': {'message': 'Dịch vụ đang quá tải, vui lòng thử lại sau. / The service is overloaded, please try again later. (request id: 202610060812242787414218268d9d6GwEIZceu)', 'type': 'api_error', 'param': '', 'code': 'service_unavailable', 'request_id': '202610060812242787414218268d9d6GwEIZceu'}}",
+  "timestamp": "2026-10-06T08:11:34.480826+00:00",
+  "skills_sha256": "cb39a1cf0543d09a784028d675d625b2d9d4ce0315243b623d9be13c39193435",
+  "seconds": 49.4,
+  "tokens": {
+    "input": 149676,
+    "output": 484,
+    "total": 150160
+  },
+  "tool_calls": 22,
+  "subagent_calls": 0,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "",
+  "score": 0.0,
+  "passed": 0,
+  "total": 8,
+  "checks": [
+    {
+      "name": "north_q1_revenue",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/lab-data-learn-sv5bir56/workspace/answer.json'"
+    },
+    {
+      "name": "north_q1_orders",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/lab-data-learn-sv5bir56/workspace/answer.json'"
+    },
+    {
+      "name": "top_region",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/lab-data-learn-sv5bir56/workspace/answer.json'"
+    },
+    {
+      "name": "missing_amount_orders",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/lab-data-learn-sv5bir56/workspace/answer.json'"
+    },
+    {
+      "name": "duplicate_rows_removed",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/lab-data-learn-sv5bir56/workspace/answer.json'"
+    },
+    {
+      "name": "rule_money_in_cents",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/lab-data-learn-sv5bir56/workspace/answer.json'"
+    },
+    {
+      "name": "rule_meta_block",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/lab-data-learn-sv5bir56/workspace/answer.json'"
+    },
+    {
+      "name": "rule_clean_csv",
+      "passed": false,
+      "detail": "RULE: write workspace/clean.csv with the header order_id,timestamp_utc,region,amount_cents; one row per distinct order with a known amount; timestamp_utc as YYYY-MM-DDTHH:MM:SSZ (UTC); region in canonical spelling (North, South, East, West); amount in integer cents."
+    }
+  ]
+}
